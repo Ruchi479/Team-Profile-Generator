@@ -19,6 +19,7 @@ describe("Employee", () => {
     //get id from getID()
     it("get employee ID", () => {
         const employee = new Employee(04, "Mabel", "mabel03@gmail.com");
+        //expect employee id to equal any number
         expect(employee.getId()).toEqual(expect.any(Number));
     });
 
