@@ -25,19 +25,6 @@ const addManager = () => {
     return inquirer.prompt([
         {
             type: "input",
-            name: "name",
-            message: "Who is the manager of this team?",
-            validate: nameInput => {
-                if (nameInput) {
-                    return true;
-                } else {
-                    console.log("Please enter the manager's name!");
-                    return false;
-                }
-            }
-        },
-        {
-            type: "input",
             name: "id",
             message: "Please enter the manager's ID.",
             validate: nameInput => {
@@ -49,6 +36,20 @@ const addManager = () => {
                 }
             }
         },
+        {
+            type: "input",
+            name: "name",
+            message: "Who is the manager of this team?",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter the manager's name!");
+                    return false;
+                }
+            }
+        },
+    
         {
             type: "input",
             name: "email",
@@ -78,8 +79,8 @@ const addManager = () => {
         }
     ])
     .then(managerInput => {
-        const { name, id, email, officeNumber} = managerInput;
-        const manager = new Manager (name, id, email, officeNumber);
+        const { id, name, email, officeNumber} = managerInput;
+        const manager = new Manager (id, name, email, officeNumber);
 
         teamArray.push(manager);
         console.log(manager);
@@ -97,19 +98,6 @@ const addEmployee = () => {
         },
         {
             type: "input",
-            name: "name",
-            message: "What is the name of the employee",
-            validate: nameInput => {
-                if (nameInput) {
-                    return true;
-                } else {
-                    console.log("Please enter an employee's name!")
-                    return false;
-                }
-            }
-        },
-        {
-            type: "input",
             name: "id",
             message: "Please enter the employee's ID.",
             validate: nameInput => {
@@ -121,7 +109,20 @@ const addEmployee = () => {
                 }
             }
         },
-
+        {
+            type: "input",
+            name: "name",
+            message: "What is the name of the employee",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter an employee's name!")
+                    return false;
+                }
+            }
+        },
+        
         {
             type: "input",
             name: "email",
@@ -171,14 +172,16 @@ const addEmployee = () => {
     ])
     .then(employeeData => {
         //data for employee types
-        let { name, id, email, role, github, school, confirmAddEmployee} =employeeData;
+        let {id, name,  email, role, github, school, confirmAddEmployee} =employeeData;
         let employee;
 
-        if (role == "Engineer") {
-            employee = new Engineer (name, id, email, github);
+        if (role === "Engineer") {
+            employee = new Engineer (id, name,  email, github);
+            
             console.log(employee);
+
         } else if (role === "Intern") {
-            employee = new Intern (name, id, email, school);
+            employee = new Intern (id, name, email, school);
             console.log(employee);
         }
 
