@@ -9,7 +9,6 @@ This application was created to generate a team profile based on user input usin
 * [Usage](#usage)
 * [Screenshots](#screenshots)
 * [Tests](#tests)
-* [Questions](#questions)
 
 ## Installation 
 * The user should clone the repository from GitHub and download Node. 
@@ -26,6 +25,3 @@ View walk through video here to demonstrates the usage of application - [Screenc
 ## Tests
 Run `npm test` to run Jest for tests on constructors. 
 * [The URL of the Run Test Video](https://watch.screencastify.com/v/FOCYmV0JtZ0vKyBIAUHH)
-
-## Questions
-* Find me on GitHub: Ruchi479
