@@ -5,7 +5,7 @@ const generateManager = function (manager) {
         <div class="card h-100">
             <div class="card-header">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="fas fa-user-tie"></i>
+                <h4>Manager <i class="fas fa-user-tie icon"></i> </h4>
             </div>
 
             <div class="card-body">
@@ -26,7 +26,7 @@ const generateEngineer = function (engineer) {
         <div class="card h-100">
             <div class="card-header">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i class="fas fa-user-circle"></i>
+                <h4>Engineer <i class="fas fa-user-alt icon"></i></h4>
             </div>
 
             <div class="card-body">
@@ -47,7 +47,7 @@ const generateIntern = function (intern) {
         <div class="card h-100">
             <div class="card-header">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="fas fa-user-graduate"></i>
+                <h4>Intern <i class="fas fa-user-graduate icon"></i> </h4>
             </div>
 
             <div class="card-body">
