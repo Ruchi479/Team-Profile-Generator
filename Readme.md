@@ -8,7 +8,6 @@ This application was created to generate a team profile based on user input usin
 * [Installation](#installation)
 * [Usage](#usage)
 * [Screenshots](#screenshots)
-* [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
@@ -24,13 +23,9 @@ View walk through video here to demonstrates the usage of application - [Screenc
 ![Readme Generator](./assets/img/img1.jpg)
 ![Readme Generator](./assets/img/img2.jpg)
 
-## Contributing 
-If you'd like to contact me, feel free to reach out using the Questions section below.
-
 ## Tests
 Run `npm test` to run Jest for tests on constructors. 
 * [The URL of the Run Test Video](https://watch.screencastify.com/v/FOCYmV0JtZ0vKyBIAUHH)
 
 ## Questions
-* If you have any questions about this projects, please contact me at github.
-* My GitHub user-name is Ruchi479
+* Find me on GitHub: Ruchi479
